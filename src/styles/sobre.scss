@@ -1,0 +1,104 @@
+@use "variaveis";
+
+.Sobre{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    max-width: 1480px;
+    margin: 0 auto;
+    height: 630px;
+    
+        h2{
+            color: aliceblue;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 40px;
+            font-family: Sawarabi Mincho, serif;
+            text-shadow: variaveis.$sombras;
+        }
+
+    .container{
+        display: flex;
+        margin-top: 100px;
+        margin-left: 80px;
+        margin-right: 80px;
+
+        img{
+            border-radius: 4px; 
+        }
+
+        p{
+            margin-left: 85px;
+            display: flex;
+            align-items: center;
+            max-width: 700px;
+            width: 100%;
+            font-family: Sawarabi Mincho, serif;
+            font-size: 15px;
+            text-align: justify;
+        }
+    }
+}
+
+@media only screen and (min-width: 933px) and (max-width: 1024px) {
+    .Sobre{
+        height: 900px;
+        h2{
+            margin-top: 20px;
+            font-size: 46px;
+        }
+
+        .container{
+            display: block;
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+
+            img{
+                display: block;
+                margin: 0 auto;
+                max-width: 600px;
+                width: 100%;
+                height: auto;
+            }
+
+            p{
+                margin: 0 auto;
+                margin-top: 30px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 932px){
+    .Sobre{
+        height: 600px;
+        h2{
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        .container{
+            display: block;
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            img{
+                max-width: 200px;
+                height: 150px;
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+            }
+            p{
+                max-width: 300px;
+                font-size: 12px;
+                margin: auto 0;
+                margin-top: 20px;
+            }
+        }
+    }
+}

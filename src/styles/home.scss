@@ -1,0 +1,39 @@
+@use "variaveis";
+
+.Home{
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.sympla.com.br/65146f8e60fc5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+    height: 630px;
+    
+    h1{
+        color: rgb(38, 194, 194);
+        display: flex;
+        margin-top: 60px;
+        max-height: 40px;
+        font-size: 50px;
+        font-family: Sawarabi Mincho, serif;
+        text-shadow: variaveis.$sombras;
+        }
+    
+    img{
+        width: 100%;
+        max-width: 750px;
+        max-height: 500px;
+    }
+}
+
+
+@media only screen and (max-width: 932px){
+    .Home{
+        height: 300px;
+        h1{
+            font-size: 25px;
+            margin-top: 30px;
+        }
+    }
+}

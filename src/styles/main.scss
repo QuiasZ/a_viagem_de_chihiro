@@ -1,0 +1,71 @@
+@use "reset";
+@use "home";
+@use "sobre";
+@use "personagens";
+@use "variaveis";
+@use "footer";
+
+
+
+body{
+    background-color: rgb(39, 150, 156);
+    
+    header{
+        background-color: rgb(19, 97, 101);
+        position: sticky;
+        top: 0;
+        left: 0;
+        
+        ul{
+            display: flex;
+            justify-content: end;
+            list-style: none;
+            margin-right: 30px;
+            
+            li{
+                padding: 30px;
+                margin-left: 20px;
+                
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-family: Sawarabi Mincho, serif;
+                    color: azure;
+                    text-shadow: variaveis.$sombras;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 933px) and (max-width: 1024px) { //tablets em diante
+    body{
+        header{
+            ul{
+                li{
+                    a{
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 932px) { //celulares
+    body{
+        header{
+            padding: 20px;
+            ul{
+                margin-right: 0;
+                li{
+                    padding: 10px;
+                    margin: 0 auto;
+                    a{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
